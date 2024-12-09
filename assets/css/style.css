@@ -368,7 +368,7 @@ main{
     .home {
         margin-top: 3.5rem;
         background-size:150%;
-      
+        background-position: center;
     }
  
     .home-title {
