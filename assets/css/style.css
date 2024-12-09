@@ -220,7 +220,7 @@ body {
     .mobile-auth {
         display: grid;
         margin-top: 2rem;
-        gap: 2rem;
+        gap: 10px;
         justify-content: center;
         align-items: center;
         width: 100%;
