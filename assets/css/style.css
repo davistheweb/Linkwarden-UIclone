@@ -6,6 +6,7 @@
     --body--dark: #121212;
     --text--color-white:#fff;
     --line--linear: linear-gradient(to right, #e5e7eb, #eddada);
+    --button-gradient: linear-gradient(to right, #4b03cd, #673ab7);
     /* font family */
 
     --web--font:"Roboto", sans-serif;
@@ -35,6 +36,7 @@ body {
     align-items: center !important;
     width: 100% !important;
     max-width: 100% !important;
+    overflow: hidden;
 }
 
 
@@ -115,8 +117,21 @@ body {
 /* Header breakpoints */
 
 @media screen and (max-width: 970px) {
+
+    .header{
+        justify-content: space-between;
+    }
+
+    .logo-body {
+      padding: .2rem;
+    }
+    .logo-body img {
+        width: 160px;
+    }
     .menu-hambuger-container {
         display: block;
+        padding: .5rem;
+        transform: translateX(-2rem);
     }
 
     .nav-end {
@@ -124,8 +139,33 @@ body {
     }
 
     .menu {
+       position: relative;
+       display: flex;
+        font-size: 25px;
         color: var(--text--color-white);
-        font-size: 19px;
+        
+        
+    }
+
+    .toggle_open,
+    .toggle_close{
+        position: absolute;
+        transition: opacity 0.1s ease-in;
+    }
+    .toggle_close {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .ham .toggle_close{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .ham .toggle_open{
+
+        opacity: 0;
+        visibility: hidden;
     }
 
     .navbar {
@@ -133,8 +173,15 @@ body {
         background-color: var(--body--dark);
         width: 100%;
         padding: 0 2%;
-        top: 80%;
+        top: 70%;
+        display: none;
         border-top: 1px solid rgb(255,255,255,0.1);
+        transition: top 0.5s ease-in;
+    }
+
+    .navbar.open {
+        top: 80%;
+        display: block;
     }
 
     .nav-con {
@@ -148,7 +195,7 @@ body {
     }
 
     .navlist {
-        padding-bottom:2rem;
+        padding-bottom:1.5rem;
         padding-top: 1rem;
         position: relative;
         width: 1000vh;
@@ -176,15 +223,46 @@ body {
         gap: 2rem;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
 
     .mobile_login_button {
         display: flex;
         gap: .4rem;
         color: var(--text--color-white);
+        font-size: 19px;
+        justify-content: center;
+        align-items: center;
     }
 
     .mobile_login_button a {
         color: var(--text--color-white);
     }
+
+    .mobile_signup_button {    
+        display: flex;
+        justify-content: center;
+        margin: 0 auto; 
+        width: 100%;
+    }
+
+    .mobile_signup {
+        display: flex;
+        text-align: center;
+        background:var(--button-gradient);
+        border: 1px solid #fff;
+        border-radius: 2rem;
+        font-size: 20px;
+        color: var(--text--color-white);
+        font-weight: 700;
+       /*  padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem; */
+
+        padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+
+
+    }
+
 }
