@@ -31,13 +31,13 @@ body {
     display: grid;
 }
 
-.main{
+main{
     display: flex;
     justify-content: center !important;
     align-items: center !important;
     width: 100% !important;
     max-width: 1400px !important;
-    overflow: hidden;
+    overflow-x: hidden !important;
 }
 
 
@@ -361,21 +361,168 @@ body {
 
 @media screen and (max-width: 380px) {
 
+    .navlist {
+        padding-bottom: 1.1rem;
+    }
+
     .home {
         margin-top: 3.5rem;
-        background-size:120%;
-        background-position: center;
+        background-size:150%;
+      
     }
  
-
     .home-title {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
     .home-subtitle {
         font-size: .87rem;
     }
+    .home_buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .starttrial {
+        border: 1px solid #838383;
+    }
+    .star-github {
+        border: 1px solid rgb(163, 161, 161);
+    }
+
+    .starttrial,
+    .star-github {
+        width: 100%;
+        justify-content: center;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+
     .home_img img {
         width: 320px;
+    }
+}
+
+@media screen and (min-width: 381px) {
+
+    .navlist {
+        padding-bottom: 1.1rem;
+    }
+
+    .home {
+        margin-top: 3.5rem;
+        background-size:130%;
+        background-position: center;
+    }
+ 
+    .home-title {
+        font-size: 1.6rem;
+    }
+
+    .home-subtitle {
+        font-size: .87rem;
+    }
+    .home_buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .starttrial {
+        border: 1px solid #838383;
+    }
+    .star-github {
+        border: 1px solid rgb(163, 161, 161);
+    }
+    .starttrial,
+    .star-github {
+        width: 100%;
+        justify-content: center;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+
+    .home_img img {
+        width: 320px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .home {
+        background-size: 100%;
+    }
+
+    .home-title {
+        font-size: 1.7rem;
+    }
+
+    .home-subtitle {
+        font-size: .95rem;
+    }
+
+    .home_img img {
+        width: 380px;
+    }
+}
+
+@media screen and (min-width: 640px) {
+
+  
+
+    .home-title {
+        font-size: 2.6rem;
+    }
+
+    .home-subtitle {
+        font-size: 1.45rem;
+    }
+
+    .home_buttons {
+        flex-direction: row;
+    }
+
+
+
+    .starttrial,
+    .star-github {
+        width: auto;
+        padding-top: auto;
+        padding-bottom:auto;
+        font-size: 1.2rem;
+    }
+
+    .home_img img {
+        width: 480px;
+    }
+}
+
+
+@media screen and (min-width: 740px) {
+
+    .home {
+        margin-top: 8rem;
+    }
+    .home_img {
+        width: 540px;
+    }
+}
+
+@media screen and (min-width: 920px){
+
+    .home {
+        margin-top: 8rem;
+        background-size: 100%!important;
+        background-position:unset;
+    }
+
+    .home-title{
+        font-size: 3.5rem;
+    }
+
+    .home-subtitle {
+        font-size: 1rem;
+    }
+
+    .home_img img {
+        width: 750px;
     }
 }

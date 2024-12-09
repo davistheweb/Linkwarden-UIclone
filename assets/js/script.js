@@ -6,14 +6,15 @@ const toogleMenu = (menuButton, menu) => {
 
     menuButtonEle.addEventListener('click', () => {
         menuElement.classList.toggle('open');
-        document.body.classList.toggle('ham')
+        document.body.classList.toggle('ham');
     })
 
     document.addEventListener('click', (e) => {
         if(!menuElement.contains(e.target) && !menuButtonEle.contains(e.target)){
-            menuElement.classList.remove('open')
+            menuElement.classList.remove('open');
+            document.body.classList.remove('ham');
         }
     })
 }
 
-toogleMenu('.menu','.navbar')
+toogleMenu('.menu','.navbar');
