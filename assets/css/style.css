@@ -32,7 +32,7 @@ body {
 }
 
 main{
-    display: flex;
+    
     justify-content: center !important;
     align-items: center !important;
     width: 100% !important;
@@ -356,6 +356,33 @@ main{
     width:700px;
 }
 
+.news_section {
+    padding: 1%;
+    position: relative;
+    margin-top:2rem;
+    display: grid;
+    gap: 2rem;
+}
+
+.news-title-container { 
+    padding-left: 2%;
+}
+
+.news_title {
+    color: var(--text--color-white);
+    text-align: center;
+    font-family: var(--web--font);
+}
+
+.companies_container{
+    display: flex;
+    gap: .3rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   
+}
+
 /* @breakpoints */
 
 
@@ -401,6 +428,41 @@ main{
     .home_img img {
         width: 320px;
     }
+
+    .news_section {
+        padding: 1%;
+        position: relative;
+        margin-top:2rem;
+        display: grid;
+        gap: 2rem;
+    }
+
+    .news-title-container { 
+        padding-left: 2%;
+    }
+
+    .news_title {
+        font-size: 1rem;
+    }
+
+    .companies_container{
+        display: flex;
+        gap: .3rem;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .google_img img{
+        width: 60px;
+      }
+
+      .amazon_img img{
+        width: 60px;
+      }
+
+      .bytedance_img img {
+        width: 150px;
+      }
 }
 
 @media screen and (min-width: 381px) {
@@ -420,7 +482,7 @@ main{
     }
 
     .home-subtitle {
-        font-size: .87rem;
+        font-size: 1rem;
     }
     .home_buttons {
         flex-direction: column;
@@ -444,6 +506,45 @@ main{
     .home_img img {
         width: 320px;
     }
+
+    .news_section {
+        padding: 1%;
+        position: relative;
+        margin-top:2rem;
+        display: grid;
+        gap: 2rem;
+    }
+
+    .news-title-container { 
+        padding-left: 2%;
+    }
+
+    .news_title {
+        font-size: 1rem;
+        color: var(--text--color-white);
+        font-family: var(--web--font);
+        text-align: center;
+    }
+
+    .companies_container{
+        display: flex;
+        gap: .3rem;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 1% 2%; 
+    }
+    .google_img img{
+        width: 60px;
+      }
+
+      .amazon_img img{
+        width: 60px;
+      }
+
+      .bytedance_img img {
+        width: 150px;
+      }
 }
 
 @media screen and (min-width: 500px) {
@@ -462,6 +563,28 @@ main{
     .home_img img {
         width: 380px;
     }
+
+ 
+
+    .news_title {
+        font-size: 1.1rem;
+    
+    }
+
+    .companies_container{
+        gap: .8rem;
+    }
+    .google_img img{
+        width: 90px;
+      }
+
+      .amazon_img img{
+        width: 90px;
+      }
+
+      .bytedance_img img {
+        width: 200px;
+      }
 }
 
 @media screen and (min-width: 640px) {
@@ -493,6 +616,26 @@ main{
     .home_img img {
         width: 480px;
     }
+
+    .news_title {
+        font-size: 1.2rem;
+    
+    }
+
+    .companies_container{
+        gap: .10rem;
+    }
+    .google_img img{
+        width: 100px;
+      }
+
+      .amazon_img img{
+        width: 100px;
+      }
+
+      .bytedance_img img {
+        width: 210px;
+      }
 }
 
 
@@ -510,7 +653,7 @@ main{
 
     .home {
         margin-top: 8rem;
-        background-size: 100%!important;
+        background-size: 200;
         background-position:unset;
     }
 
@@ -525,4 +668,47 @@ main{
     .home_img img {
         width: 750px;
     }
+
+    .news_title {
+        font-size: 1.2rem;
+    
+    }
+
+    .companies_container{
+        gap: .10rem;
+    }
+    .google_img img{
+        width: 100px;
+      }
+
+      .amazon_img img{
+        width: 100px;
+      }
+
+      .bytedance_img img {
+        width: 210px;
+      }
+}
+
+@media screen and (min-width: 1020px){
+
+    .news_title {
+        font-size: 2rem;
+    
+    }
+
+    .companies_container{
+        gap: .10rem;
+    }
+    .google_img img{
+        width: 150px;
+      }
+
+      .amazon_img img{
+        width: 150px;
+      }
+
+      .bytedance_img img {
+        width: 300px;
+      }
 }
