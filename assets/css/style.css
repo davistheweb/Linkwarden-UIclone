@@ -386,6 +386,39 @@ main{
 /* @breakpoints */
 
 
+.features {
+    padding: 0 1%;
+}
+
+.features_container {
+    position: relative;
+    display: flex;
+    color: var(--text--color-white);
+    font-family: var(--web--font);
+    width: 100%;
+}
+
+.svg_bg {
+    position: absolute;
+    filter: drop-shadow(0 0 105px rgba(88, 11, 211, 0.8));
+    background-image: url(../img/SVG\ by\ MagicPattern.design.svg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    z-index: -1;
+    width: 60%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .rounded_feature-text {
+    border: 1px solid #fff;
+    border-radius: 20px;
+    display: flex;
+    padding: .5rem 1.5rem .5rem 1.5rem;
+    display: inline;
+  }
 @media screen and (max-width: 380px) {
 
     .navlist {
@@ -396,6 +429,7 @@ main{
         margin-top: 3.5rem;
         background-size:150%;
         background-position: center;
+        background-size: 100%;
     }
  
     .home-title {
@@ -462,6 +496,79 @@ main{
 
       .bytedance_img img {
         width: 150px;
+      }
+
+      .features_container {
+        padding: 0 2%;
+      }
+
+      .svg_bg {
+        background-size: 100%;
+        width: 100%;
+        top: -10%;
+      }
+
+      .features_container {
+        padding: 0 2%;
+        flex-direction: column;
+        /* 
+        justify-content: center;
+        align-items: center; */
+      }
+      
+      .features_title_box {
+        padding: auto;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+      }
+
+      .rounded_feature-text {
+        text-align: center;
+        justify-self: center;
+       
+      }
+
+      .features-title {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: .4rem;
+      }
+
+      .features_subtitles {
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      .fe_span {
+        gap: .3rem;
+      }
+
+      .fe_span i {
+        color: #23f1f1;
+      }
+
+      .feature_subtitle{
+        font-size: .8rem;
+      }
+
+      .features_demo {
+        position: relative;
+        padding: 0 1%;
+        margin-top: 2rem;
+      }
+      
+      .featuredemo_video  {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .featuredemo_video video {
+        width: 100%;
+        border-radius: 20px;
       }
 }
 

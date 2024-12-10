@@ -4,6 +4,16 @@
         "features_des1" : "Collect webpages and bookmarks from any browser",
         "features_des2": "Oraganize your links with Collections and Tags",
         "features_des3":"Create new Collections to group related Links"
+    },
+    "featuresDescription2": {
+        "features_des1" : "Access webpages even if they are taken down.",
+        "features_des2": "Safeguard your webpages against Link Rot.",
+        "features_des3":"Download your archived webpages."
+    },
+    "featuresDescription3": {
+        "features_des1" : "Collaborate on gathering resources under a Collection.",
+        "features_des2": "Assign customizable permissions to each member.",
+        "features_des3":"Easily share curated collections with the world."
     }
     }
 ]
