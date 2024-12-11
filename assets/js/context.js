@@ -14,16 +14,16 @@ const displayContext = () => {
 
         //console.table(featuresArr);
         const textS = document.querySelectorAll('.feature_subtitle')
+        const textS1 = document.querySelectorAll('.feature_subtitle1')
+        const textS2 = document.querySelectorAll('.feature_subtitle2')
 
         for(let i = 0; i < featuresArr1.length; i++){
             textS[i].textContent = featuresArr1[i]; 
         }
-        const textS1 = document.querySelectorAll('.feature_subtitle1')
 
         for(let n = 0; n < featuresArr2.length; n++){
             textS1[n].textContent = featuresArr2[n]; 
         }
-        const textS2 = document.querySelectorAll('.feature_subtitle2')
 
         for(let x = 0; x < featuresArr3.length; x++){
             textS2[x].textContent = featuresArr3[x]; 

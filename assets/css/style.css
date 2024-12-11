@@ -395,14 +395,13 @@ main{
     display: flex;
     color: var(--text--color-white);
     font-family: var(--web--font);
-    width: 100%;
+  
 }
 
 .svg_bg {
     position: absolute;
     filter: drop-shadow(0 0 105px rgba(88, 11, 211, 0.8));
     background-image: url(../img/SVG\ by\ MagicPattern.design.svg);
-    background-size: 70%;
     background-repeat: no-repeat;
     z-index: -1;
     width: 60%;
@@ -417,7 +416,7 @@ main{
     border-radius: 20px;
     display: flex;
     padding: .5rem 1.5rem .5rem 1.5rem;
-    display: inline;
+    
   }
 @media screen and (max-width: 380px) {
 
@@ -497,7 +496,6 @@ main{
       .bytedance_img img {
         width: 150px;
       }
-
       .features_container {
         padding: 0 2%;
       }
@@ -519,8 +517,6 @@ main{
       .features_title_box {
         padding: auto;
         position: relative;
-        justify-content: center;
-        align-items: center;
         display: grid;
       }
 
@@ -532,13 +528,13 @@ main{
 
       .features-title {
         font-size: 1.2rem;
-        text-align: center;
         margin-top: .4rem;
       }
 
       .features_subtitles {
         gap: 1rem;
         margin-top: 1rem;
+
       }
 
       .fe_span {
@@ -550,7 +546,7 @@ main{
       }
 
       .feature_subtitle{
-        font-size: .8rem;
+        font-size: .92rem;
       }
 
       .features_demo {
@@ -666,17 +662,16 @@ main{
       .features_container {
         padding: 0 2%;
         flex-direction: column;
-        /* 
-        justify-content: center;
-        align-items: center; */
+     
+        /* justify-content: center;
+        align-items: center;  */
       }
       
       .features_title_box {
-        padding: auto;
         position: relative;
-        justify-content: center;
-        align-items: center;
         display: grid;
+        gap: 1rem;
+        padding: 2% 2%;
       }
 
       .rounded_feature-text {
@@ -687,7 +682,6 @@ main{
 
       .features-title {
         font-size: 1.2rem;
-        text-align: center;
         margin-top: .4rem;
       }
 
@@ -705,7 +699,7 @@ main{
       }
 
       .feature_subtitle{
-        font-size: .8rem;
+        font-size: .92rem;
       }
 
       .features_demo {
@@ -765,6 +759,18 @@ main{
       .bytedance_img img {
         width: 200px;
       }
+
+      .features-title {
+        font-size: 1.5rem;
+      }
+
+      .feature_subtitle {
+        font-size: 1rem;
+      }
+
+      .featuredemo_video video {
+        width: 90%;
+      }
 }
 
 @media screen and (min-width: 640px) {
@@ -816,6 +822,19 @@ main{
       .bytedance_img img {
         width: 210px;
       }
+
+      .features-title {
+        font-size: 1.8rem;
+      }
+
+      .features_subtitles  {
+        font-size: 1.4rem;
+      }
+
+      .featuredemo_video video {
+        width: 90%;
+      }
+
 }
 
 
@@ -826,6 +845,10 @@ main{
     }
     .home_img {
         width: 540px;
+    }
+
+    .featuredemo_video video {
+        width: 80%;
     }
 }
 
@@ -868,9 +891,13 @@ main{
       .bytedance_img img {
         width: 210px;
       }
+
+      .featuredemo_video video {
+        width: 75%;
+    }
 }
 
-@media screen and (min-width: 1020px){
+@media screen and (min-width: 1024px){
 
     .news_title {
         font-size: 2rem;
@@ -890,4 +917,58 @@ main{
       .bytedance_img img {
         width: 300px;
       }
+      .features_block {
+        display: grid;
+       gap: 10rem;
+      }
+
+      .features  {
+        margin-top: 4rem;
+      }
+      .features_container {
+        flex-direction: row;
+        gap: 0;
+      }
+
+      .features_title_box {
+        width: 100%;
+        gap: 0;
+        height: 60%;
+        margin-top: 2.6rem;
+      }
+
+      .svg_bg {
+        filter: drop-shadow(105px 105px 105px 105px rgba(88, 11, 211, 0.8));
+        background-size: 90%;
+        background-position: center;
+        top: -30%;
+        left: -10%;
+        width: 55%;
+      }
+
+      .rounded_feature-text {
+        position: absolute;
+        right: -20% !important;
+        top: -30%;
+      }
+
+      .features_title_box .features-title {
+        font-size: 2rem;
+        line-height: 0;
+        padding: 0 !important;
+        margin: 0 !important;
+        height: 0;
+      }
+
+      .features_subtitles  {
+        gap: 0;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        padding: 0;
+      }
+
+      .featuredemo_video video {
+        width: 85%;
+    }
 }
