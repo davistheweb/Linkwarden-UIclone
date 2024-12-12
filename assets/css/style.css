@@ -437,7 +437,7 @@ main{
   .experience-box {
     width: 100%;
    /*  background-image: url(../../SVG\ by\ MagicPattern.design\ \(1\).svg); */
-    background:url(../../SVG\ by\ MagicPattern.design\ \(1\).svg), linear-gradient( #673ab7, #3a00a1);
+   background: url(../../SVG\ by\ MagicPattern.design\ \(1\).svg), linear-gradient(rgba(178, 102, 255, 0.6), rgba(98, 51, 255, 0.6));
     background-repeat: no-repeat;
     background-size:cover;
     border: 1px solid #38353d;
@@ -465,8 +465,30 @@ main{
 
   }
 
-  
-  
+  .experience_box_container {
+    position: relative;
+  }
+  .features_paragraph_loading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    background-image: linear-gradient(to left, transparent, rgba(188, 168, 168, 0.5), transparent);
+    animation: features-paragraph-loading 1s infinite;
+  }
+
+  @keyframes features-paragraph-loading{
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  .user_experience-context {
+    position: relative;
+  }
 @media screen and (max-width: 380px) {
 
     .navlist {
@@ -545,6 +567,9 @@ main{
       .bytedance_img img {
         width: 150px;
       }
+      .features_block {
+        gap: 2rem;
+      }
       .features_container {
         padding: 0 2%;
       }
@@ -580,7 +605,10 @@ main{
         margin-top: .4rem;
       }
 
+  
+
       .features_subtitles {
+        position: relative;
         gap: 1rem;
         margin-top: 1rem;
 
@@ -624,7 +652,7 @@ main{
       }
 
       .experience_box_container {
-        gap: 2rem;
+        gap: 5rem;
         padding: 1% 2%;
       }
 
@@ -659,8 +687,9 @@ main{
       }
 
       .experience-box {
+        position: relative;
         max-width: 90%;
-        max-height: 90%;
+       max-height: 120%;
         justify-self: center;
         background-size: cover;
       }

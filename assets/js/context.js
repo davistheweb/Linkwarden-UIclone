@@ -51,4 +51,20 @@ const displayContext = () => {
     });
 };
 
-displayContext();
+
+const removeLoadingAnimation = ()=> {
+  const paragraphText = document.querySelectorAll('.features_paragraph_loading')
+
+  paragraphText.forEach(paragraphTexts => {
+    paragraphTexts.classList.remove('features_paragraph_loading');
+
+  paragraphTexts.style.animation = "none"
+  })
+  
+}
+
+window.addEventListener('load', () => {
+  displayContext();
+  removeLoadingAnimation(); 
+})
+
