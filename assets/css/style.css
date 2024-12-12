@@ -24,8 +24,11 @@
 body {
     background-color: var(--body--dark);
     padding: 0 .5%;
-    height: 100vh;
+    height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .grid {
@@ -265,7 +268,7 @@ main{
 }
 
 .home {
-    margin-top: 8rem;
+    margin-top: 2rem;
     font-family: var(--web--font);
     background-image: url(../img/SVG\ by\ MagicPattern.design.svg);
     /* box-shadow: 0 0 15px 5px rgba(186, 187, 187, 0.4);  */
@@ -384,6 +387,10 @@ main{
    
 }
 
+.features_title_box{
+  position: relative;
+}
+
 /* @breakpoints */
 
 
@@ -436,10 +443,12 @@ main{
 
   .experience-box {
     width: 100%;
-   /*  background-image: url(../../SVG\ by\ MagicPattern.design\ \(1\).svg); */
-   background: url(../../SVG\ by\ MagicPattern.design\ \(1\).svg), linear-gradient(rgba(178, 102, 255, 0.6), rgba(98, 51, 255, 0.6));
-    background-repeat: no-repeat;
-    background-size:cover;
+   background: 
+   url(../img/SVG\ by\ MagicPattern.design.svg) no-repeat center center,
+   linear-gradient(rgba(181, 128, 234, 0.3), rgba(121, 84, 242, 0.3));
+    filter: brightness(1);
+    background-size: 100%;
+ 
     border: 1px solid #38353d;
     border-radius: 20px;
     /* 
@@ -448,7 +457,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 1.5rem;
     height: 100%;
   }
 
@@ -476,7 +485,7 @@ main{
     width: 100%;
     height: 100%;
     transform: translateX(-100%);
-    background-image: linear-gradient(to left, transparent, rgba(188, 168, 168, 0.5), transparent);
+    background-image: linear-gradient(to left, transparent, rgba(200, 190, 190, 0.1), transparent);
     animation: features-paragraph-loading 1s infinite;
   }
 
@@ -652,7 +661,7 @@ main{
       }
 
       .experience_box_container {
-        gap: 5rem;
+        gap: 3rem;
         padding: 1% 2%;
       }
 
@@ -682,7 +691,7 @@ main{
       .experience-subtitle {
         
         font-size: .9rem;
-        font-weight: 200;
+        font-weight: 400;
         text-align: center;
       }
 
@@ -847,6 +856,58 @@ main{
         width: 100%;
         border-radius: 20px;
       }
+
+      .user_exp {
+        margin-bottom: 2.5rem;
+      }
+      .exp_title {
+        text-align: center;
+        font-size: 1.8rem;
+      }
+
+      .experience_box_container {
+        gap: 3rem;
+        padding: 1% 2%;
+      }
+
+      .exp_img_demo {
+        margin-bottom: 1rem;
+      }
+
+      .exp_img_demo img {
+        width: 60px;
+        text-align: center;
+      }
+      .user_experience-context {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+        padding: .3em;
+      }
+
+      .experience_title {
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 500;
+      }
+
+      .experience-subtitle {
+        
+        font-size: .9rem;
+        font-weight: 400;
+        text-align: center;
+      }
+
+      .experience-box {
+        position: relative;
+        height: 100%;
+        max-width: 90%;
+       max-height: 120%;
+        justify-self: center;
+        background-size: cover;
+      }
 }
 
 @media screen and (min-width: 500px) {
@@ -865,8 +926,6 @@ main{
     .home_img img {
         width: 380px;
     }
-
- 
 
     .news_title {
         font-size: 1.1rem;
@@ -962,7 +1021,26 @@ main{
       .featuredemo_video video {
         width: 90%;
       }
+     
+      .experience_box_container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
 
+      }
+
+      .experience-subtitle {
+        font-size: .8rem;
+        width: 100%;
+      }
+
+      .experience-box {
+        max-height: 90%;
+        max-width: 100%;
+      }
+
+      .exp_img_demo img  {
+        width: 50px;
+      }
 }
 
 
@@ -1098,5 +1176,22 @@ main{
 
       .featuredemo_video video {
         width: 85%;
+    }
+
+    .experience_title {
+      font-size: 1rem;
+    }
+
+    .experience-subtitle {
+      font-size: .8rem;
+    }
+
+    .experience_box_container {
+      grid-template-columns: repeat(4, .4fr);
+      justify-self: center;
+    }
+    .experience-box {
+      width: 120%;
+      height: 95%;
     }
 }
