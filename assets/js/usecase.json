@@ -1,0 +1,64 @@
+[
+  {
+    "PersonalUseCaseTitles": {
+      "personalUseCaseTitle1": "Bookmark Organization",
+      "personalUseCaseTitle2": "Seamless Collaboration",
+      "personalUseCaseTitl3": "Content Preservation",
+      "personalUseCaseTitle4": "Easy Access"
+    },
+    "PersonalUseCaseSubtitles": {
+      "personalUseCaseSubtitle1": "Store and categorize links to articles, blogs posts, and online content for easy retrieval.",
+      "personalUseCaseSubtitle2": "Share essential links and references among your friend or even publicly.",
+      "personalUseCaseSubtitle3": "Keep a permanent snapshot of links regardless of any changes to the original content.",
+      "personalUseCaseSubtitle4": "Conveniently revisit favourite or important online materials at any time."
+    }
+  },
+  [
+    {
+      "DesignInspirationsCaseTitles": {
+        "DesignInspirationsCaseTitle1": "Centralized Resources Collection",
+        "DesignInspirationsCaseTitle2": "Collaboration and Sharing",
+        "DesignInspirationsCaseTitle3": "Tagging and Organization",
+        "DesignInspirationsCaseTitle4": "Access Anywhere"
+      },
+      "DesignInspirationsCaseSubtitles": {
+        "DesignInspirationsCaseSubtitle1": " Aggregate and organize diverse inspiration in one place.",
+        "DesignInspirationsCaseSubtitle2": "Teams can share and build a design resource pool together.",
+        "DesignInspirationsCaseSubtitles": "Use tags and categories for quick inspiration retrieval.",
+        "DesignInspirationsCaseSubtitle4": "Save and access design inspiration from any device."
+      }
+    }
+  ],
+  [
+    {
+      "Research&ReferenceUseCasesTitles": {
+        "Research&ReferenceUseCaseTitle1": "Resource Gathering",
+        "Research&ReferenceUseCaseTitle2": "Permament Access",
+        "Research&ReferenceUseCaseTitle3": "Collaborative Research",
+        "Research&ReferenceUseCaseTitle4": "Easy Access"
+      },
+      "Research&ReferenceUseCaseSubtitles": {
+        "Research&ReferenceUseCaseSubtitle1": "Gather and organize academic links and articles.",
+        "Research&ReferenceUseCaseSubtitle2": "Archive webpages to ensure continuous access despite changes or removal of online sources.",
+        "Research&ReferenceUseCaseSubtitle3": "Pool resources and references through shared collaboration features.",
+        "Research&ReferenceUseCaseSubtitle4": "Quickly store and access information through origanized tags and categories."
+      }
+    }
+  ],
+  [
+    {
+      "ProjectCollaborationUseCaseTitles": {
+        "ProjectCollaborationUseCaseTitle1": "Team Resource Gathering",
+        "ProjectCollaborationUseCaseTitle2": "Seamless Collaboration",
+        "ProjectCollaborationUseCaseTitle3": "Project Efficiency",
+        "ProjectCollaborationUseCaseTitle4": "information Sharing"
+      },
+      "ProjectCollaborationUseCaseSubtitles": {
+        "ProjectCollaborationUseCaseSubtitle1": "Collectively gather and organize webpages relevant to a project.",
+        "ProjectCollaborationUseCaseSubtitle2": "Share essential resources and references among team members.",
+        "ProjectCollaborationUseCaseSubtitle3": "Access a Centralized resource hub for all project-related information.",
+        "ProjectCollaborationUseCaseSubtitle4": "Ensure all team members have access to the same materials."
+      }
+    }
+  ]
+]

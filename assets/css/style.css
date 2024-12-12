@@ -449,7 +449,7 @@ main{
     filter: brightness(1);
     background-size: 100%;
  
-    border: 1px solid #38353d;
+    border: 1px solid #beb5cb;
     border-radius: 20px;
     /* 
     filter: drop-shadow(0 0 105px rgba(18, 0, 48, 0.8)); */
@@ -750,7 +750,7 @@ main{
     .news_section {
         padding: 1%;
         position: relative;
-        margin-top:2rem;
+        margin-top:3rem;
         display: grid;
         gap: 2rem;
     }
@@ -1101,6 +1101,10 @@ main{
       .featuredemo_video video {
         width: 75%;
     }
+
+    .news_section {
+      margin-top: 8rem;
+    }
 }
 
 @media screen and (min-width: 1024px){
@@ -1178,6 +1182,11 @@ main{
         width: 85%;
     }
 
+    .exp_title {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+
     .experience_title {
       font-size: 1rem;
     }
@@ -1187,11 +1196,13 @@ main{
     }
 
     .experience_box_container {
-      grid-template-columns: repeat(4, .4fr);
+      gap: .9rem;
+      grid-template-columns: repeat(3, .4fr);
       justify-self: center;
     }
     .experience-box {
-      width: 120%;
+      width: 100%;
+      max-width: 90%;
       height: 95%;
     }
 }
