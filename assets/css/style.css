@@ -436,10 +436,11 @@ main{
 
   .experience-box {
     width: 100%;
-    background-image: url(../img/SVG\ by\ MagicPattern.design.svg);
+   /*  background-image: url(../../SVG\ by\ MagicPattern.design\ \(1\).svg); */
+    background:url(../../SVG\ by\ MagicPattern.design\ \(1\).svg), linear-gradient( #673ab7, #3a00a1);
     background-repeat: no-repeat;
-    background-size:100%;
-    border: 1px solid rgb(72, 72, 72);
+    background-size:cover;
+    border: 1px solid #38353d;
     border-radius: 20px;
     /* 
     filter: drop-shadow(0 0 105px rgba(18, 0, 48, 0.8)); */
