@@ -1,0 +1,51 @@
+[
+  {
+    "featuresDescription": {
+      "features_des1": "Collect webpages and bookmarks from any browser",
+      "features_des2": "Oraganize your links with Collections and Tags",
+      "features_des3": "Create new Collections to group related Links"
+    },
+    "featuresDescription2": {
+      "features_des1": "Access webpages even if they are taken down.",
+      "features_des2": "Safeguard your webpages against Link Rot.",
+      "features_des3": "Download your archived webpages."
+    },
+    "featuresDescription3": {
+      "features_des1": "Collaborate on gathering resources under a Collection.",
+      "features_des2": "Assign customizable permissions to each member.",
+      "features_des3": "Easily share curated collections with the world."
+    }
+  },
+  [
+    {
+      "UserExperienceHeading": {
+        "userExperienceTtile1": "Open Source, Self-hostable",
+        "userExperienceTtile2": "Responsive Design",
+        "userExperienceTtile3": "Powerful Search",
+        "userExperienceTtile4": "Pin your favourite pages",
+        "userExperienceTtile5": "Privacy Friendly",
+        "userExperienceTtile6": "Import & Export your data",
+        "userExperienceTtile7": "Dark & Light mode Supported",
+        "userExperienceTtile8": "Browser Extension",
+        "userExperienceTtile9": "Bulk Actions",
+        "userExperienceTtile10": "Secure API Intergration",
+        "userExperienceTtile11": "Installable PWA for Mobile",
+        "userExperienceTtile12": "And Many More Features..."
+      },
+         "UserExperienceSubtitles": {
+        "userExperienceSubtitle1": "Our Source code is on Github for easy deployment on your machine",
+        "userExperienceSubtitle2": "Responsive design for all screens, from widescreen to smartphones.",
+        "userExperienceSubtitle3": "Effortlessly search and filter curated content across all collections",
+        "userExperienceSubtitle4": "Pin your favourite webpages to the dashboard for easy access anytime",
+        "userExperienceSubtitle5": "Privacy is a fundamental human right. We won't sell your data to third parties",
+        "userExperienceSubtitle6": "You can import and export your data easily from the settings",
+        "userExperienceSubtitle7": "Easily toogle from dark and light mode whichever you prefer",
+        "userExperienceSubtitle8": "Collect webpages directly from your browser with our open-source extension.",
+        "userExperienceSubtitle9": "Edit or delete multiple items at once",
+        "userExperienceSubtitle10": "Connect and secure your intergrations using access tokens to create custom solutions and automate with ease.",
+        "userExperienceSubtitle11": "Enable seamless app-like experience across devices with PWA support, ensuring optional preformance and accessibility for all users",
+        "userExperienceSubtitle12": "We're constantly improving and got tons of updates planned, some are outlined in our <span style='text-decoration: underline;'>public roadmap.</span>"
+      }
+    }
+  ]
+]
