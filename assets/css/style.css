@@ -177,12 +177,13 @@ main {
     top: 70%;
     display: none;
     border-top: 1px solid rgb(255, 255, 255, 0.1);
-    transition: top 0.5s ease-in;
+    transition: all 3ms ease-in;
   }
 
   .navbar.open {
     top: 90%;
     display: block;
+    transition: all 3ms ease-in;
   }
 
   .nav-con {
@@ -406,13 +407,13 @@ main {
   right: 0;
   bottom: 0;
 }
-
+/* 
 .rounded_feature-text {
   border: 1px solid #fff;
   border-radius: 20px;
   display: flex;
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-}
+} */
 
 .user_expriences {
   padding: 2% 3%;
@@ -509,19 +510,24 @@ main {
 }
 
 @media screen and (max-width: 380px) {
+
+  body {
+    padding: 0 3%;
+  }
   .navlist {
     padding-bottom: 1.1rem;
   }
 
   .home {
     margin-top: 3.5rem;
+    
     background-size: 150%;
     background-position: center;
     background-size: 100%;
   }
 
   .home-title {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
 
   .home-subtitle {
@@ -548,13 +554,13 @@ main {
   }
 
   .home_img img {
-    width: 320px;
+    width: 290px;
   }
 
   .news_section {
     padding: 1%;
     position: relative;
-    margin-top: 2rem;
+    margin-top: 4rem;
     display: grid;
     gap: 2rem;
   }
@@ -565,6 +571,7 @@ main {
 
   .news_title {
     font-size: 1rem;
+    font-weight: 400;
   }
 
   .companies_container {
@@ -606,16 +613,20 @@ main {
         align-items: center; */
   }
 
+  .features_block {
+    margin-top: 2rem;
+  }
+
   .features_title_box {
     padding: auto;
     position: relative;
     display: grid;
   }
-
+/* 
   .rounded_feature-text {
     text-align: center;
     justify-self: center;
-  }
+  } */
 
   .features-title {
     font-size: 1.2rem;
@@ -707,6 +718,7 @@ main {
     background-size: cover;
   }
 
+  
   .usecases_section_container {
     display: grid;
     gap: 2rem;
@@ -733,7 +745,7 @@ main {
 
   .select-use_case {
     outline: none;
-    border: none;
+    border: transparent;
     border-radius: 10px;
     background: linear-gradient(to left, #3a00a1, #673ab7);
     height: 50px;
@@ -747,35 +759,39 @@ main {
     display: flex;
     justify-self: start;
     position: relative;
-    width: 100%;
-    max-width: 60%;
+    width: 110%;
+    max-width: 80%;
     align-self: center;
+    padding: 1rem 1.2rem;
+   /*  gap: 1.5rem; */
   }
 
   .usecase_img_con {
-    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 30px;
   }
   .usecase_img_con img {
     display: flex;
     justify-self: center;
     align-self: center;
-    width: 30px;
-    height:30px;
+    width: 20px;
+    height:20px;
   }
 
   .usecase_name {
-    width: 100%;
+    
     display: flex;
     align-items: center;
     text-align: center;
+    width: 150%;
   }
 
   .usecase_name .use_case_name-title {
-    font-size: 1rem;
-    width: 100%;
+    font-size: .925rem;
+    font-weight: 400;
+    width: 150%;
   }
 
   .usecase_arrrow_select {
@@ -787,7 +803,8 @@ main {
   }
 
   .usecase-arrow {
-    font-size: 2rem;
+    font-size: 1.1rem;
+    font-weight: 400;
   }
 
   .use_case_unlist {
@@ -802,6 +819,12 @@ main {
     width: 100%;
     max-width: 100%;
     display: none;
+   
+  }
+
+  .use_case_unlist.openlist {
+    display: flex;
+    
   }
 
   .usecases_section-lists {
@@ -817,7 +840,8 @@ main {
 
   .usecase_section {
     padding: .5rem;
-    width: 100%;
+    width: 110%;
+    justify-self: center;
     min-width: 100%;
     background-color: rgb(45, 45, 45, 1);
   }
@@ -836,8 +860,8 @@ main {
   }
 
   .use_case-icon img {
-    width: 30px;
-    height: 28px;
+    width: 20px;
+    height: 20px;
   }
   
   .use-case_list_title {
@@ -846,8 +870,9 @@ main {
   }
 
   .use_case-content_container {
-    gap: .8rem;
+    gap: .5rem;
     width: 100%;
+    
   }
 
   .use-case-content {
@@ -869,9 +894,9 @@ main {
   }
 
   .usecase_content-logo img {
-    width: 25px;
+    width: 20px;
     min-width: 100%;
-    height: 25px;
+    height: 20px;
   }
 
   .use_case-text {
@@ -885,16 +910,15 @@ main {
     
   }
   .usecase-title {
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: 400;
   }
   .usecase_subtitle-container {
     width: 100%;
-   
   }
 
   .usecase_subtitle {
-    font-size: .8rem;
+    font-size: .7rem;
   }
 }
 
@@ -1002,11 +1026,11 @@ main {
     gap: 1rem;
     padding: 2% 2%;
   }
-
+/* 
   .rounded_feature-text {
     text-align: center;
     justify-self: center;
-  }
+  } */
 
   .features-title {
     font-size: 1.2rem;
@@ -1196,6 +1220,11 @@ main {
     width: 100%;
     max-width: 100%;
     display: none;
+  }
+
+  .use_case_unlist.openlist {
+    display: flex;
+    transition: all 3ms ease-in;
   }
 
   .usecases_section-lists {
@@ -1436,14 +1465,15 @@ main {
     padding: 1rem;
     justify-content: center;
     align-items: center;
-    width: 110%;
+    width: 70%;
+    max-width: 60%;
     height: 130%;
     border-radius: 10px;
     border: 1px solid #838383;
   }
+
   .active_usecase {
     background-color: var(--main-color);
-    
   }
 
   .usecase-list_container {
@@ -1593,12 +1623,12 @@ main {
     left: -10%;
     width: 55%;
   }
-
+/* 
   .rounded_feature-text {
     position: absolute;
     right: -20% !important;
     top: -30%;
-  }
+  } */
 
   .features_title_box .features-title {
     font-size: 2rem;
