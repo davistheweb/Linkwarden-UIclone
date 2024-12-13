@@ -68,22 +68,28 @@ const displayUseCase = () => {
                     UseCaseSubtitle[project_collaboration_use_case_subtitles].textContent = ProjectCollaborationUseCaseSubtitles[project_collaboration_use_case_subtitles];
                 }
             }
-
-            for (let i = 0; i < resData.length; i++) {
                 useCaseSelectLists.forEach((useCaseSelectList, index) => {
                     useCaseSelectList.addEventListener("click", () => {
-                        if (index == 0) {
-                            displayPersonalUseCaseContent ();
-                        }else if (index == 1) {
-                            displayDesign_and_InspirationUseCaseContent();
-                        }else if(index == 2) {
-                            displayResearch_and_ReferenceUseCaseContent();
-                        }else if (index == 3) {
-                            displayProjectCollabContent();
-                        }
+
+                        useCaseSelectLists.forEach(link => {
+                            link.classList.remove('active_usecase');
+
+                            useCaseSelectList.classList.add('active_usecase');
+                            if (index == 0) {
+                                displayPersonalUseCaseContent ();
+                                
+                            }else if (index == 1) {
+                                displayDesign_and_InspirationUseCaseContent();
+                            }else if(index == 2) {
+                               displayResearch_and_ReferenceUseCaseContent();
+                            }else if (index == 3) {
+                             displayProjectCollabContent();   
+                            }
+                        })
+                     
                     });
                 });
-            };
+            
             displayPersonalUseCaseContent();
         });     
 };
