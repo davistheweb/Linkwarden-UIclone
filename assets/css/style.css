@@ -1284,8 +1284,6 @@ main {
   }
   .usecase_subtitle-container {
     width: 100%;
-   
-   
   }
 
   .usecase_subtitle {
@@ -1416,12 +1414,75 @@ main {
   .exp_img_demo img {
     width: 50px;
   }
+
+  .explore_usecase {
+    font-size: 2rem;
+  }
+
+  .use_case_select-button {
+    display: none;
+  }
+
+  .use_case_unlist {
+    display: flex;
+    position: relative;
+    top: 0;
+    background:none;
+  }
+
+  .usecase_section {
+    background: none;
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 110%;
+    height: 130%;
+    border-radius: 10px;
+    border: 1px solid #838383;
+  }
+  .active_usecase {
+    background-color: var(--main-color);
+    
+  }
+
+  .usecase-list_container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+ 
+
+  .user_case_section-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 110%;
+  }
+
+  .use-case_list_title {
+    font-size: 0.8rem;
+    text-align: center;
+    width: 110%;
+  }
 .use_case-content_container {
   grid-template-columns: repeat(2, 1fr);
 }
 
   .usecase_subtitle-container {
     display: flex;
+  }
+
+  .usecase_content-logo {
+    padding: 15px;
+  }
+
+  .usecase-title {
+    font-size: 1.3rem;
+  }
+
+  .usecase_subtitle {
+    font-size: .9rem;
+    font-weight:300;
   }
 }
 

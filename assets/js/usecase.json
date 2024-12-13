@@ -31,13 +31,13 @@
   ],
   [
     {
-      "Research&ReferenceUseCasesTitles": {
+      "Research_and_ReferenceUseCasesTitles": {
         "Research&ReferenceUseCaseTitle1": "Resource Gathering",
         "Research&ReferenceUseCaseTitle2": "Permament Access",
         "Research&ReferenceUseCaseTitle3": "Collaborative Research",
         "Research&ReferenceUseCaseTitle4": "Easy Access"
       },
-      "Research&ReferenceUseCaseSubtitles": {
+      "Research_and_ReferenceUseCaseSubtitles": {
         "Research&ReferenceUseCaseSubtitle1": "Gather and organize academic links and articles.",
         "Research&ReferenceUseCaseSubtitle2": "Archive webpages to ensure continuous access despite changes or removal of online sources.",
         "Research&ReferenceUseCaseSubtitle3": "Pool resources and references through shared collaboration features.",
