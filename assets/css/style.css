@@ -1559,6 +1559,16 @@ main {
   .use-case-content {
     gap: 0;
   }
+
+  .use_case-icon img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .use-case_list_title {
+    font-size: .9rem;
+  }
+
 }
 
 @media screen and (min-width: 740px) {
