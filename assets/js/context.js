@@ -32,7 +32,7 @@ const displayContext = () => {
           userexperienceheading.textContent = headingContent[index];
         });
         userExperienceSubtitleTexts.forEach((userexperiencesubtitle, index) => {
-          userexperiencesubtitle.textContent = subtitleContent[index];
+          userexperiencesubtitle.innerHTML = subtitleContent[index];
         });
     });
 };
