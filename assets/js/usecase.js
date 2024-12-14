@@ -12,7 +12,7 @@ const UseCaseTitles = document.querySelectorAll(".usecase-title"),
 
 const openAndCloseUseCaseList = () => {
     SelectBtn.addEventListener('click', (e) => {
-        e.stopPropagation()
+        e.stopPropagation();
         CaseSelectBody.classList.toggle('openlist');
     });
     document.addEventListener('click', (ev) => { 
