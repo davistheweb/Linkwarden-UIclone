@@ -15,3 +15,17 @@ const toogleMenu = (menuButton, menu) => {
     });
 };
 toogleMenu('.menu','.navbar'); 
+
+const PlanEvent = () => {
+    const planButton = document.querySelectorAll('.plan-button'),
+    planPrice = document.querySelector('.plan-price-amount');
+
+    planButton.forEach((planBtn, index) => {
+        planBtn.addEventListener('click', () => {
+            planButton.forEach(btn => btn.classList.remove('active-plan'));
+           planBtn.classList.add('active-plan');
+          let indexClicked = index === 1 ? planPrice.textContent = "$3" : planPrice.textContent = "$4";
+        });
+    })
+};
+PlanEvent();
