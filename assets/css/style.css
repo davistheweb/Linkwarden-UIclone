@@ -888,7 +888,7 @@ main {
 
   .use-case-content {
     display: flex;
-    gap: 1rem;
+   align-items: center;
     width: 100%;
   }
 
@@ -913,7 +913,6 @@ main {
   .use_case-text {
     gap: .5rem;
     display: grid;
-    border: 1px solid #828282;
     padding: 10px;
     width: 100%;
     height: 100%;
@@ -1303,7 +1302,7 @@ main {
 
   .use-case-content {
     display: flex;
-    gap: 1rem;
+    align-items: center;
     width: 100%;
   }
 
@@ -1328,7 +1327,6 @@ main {
   .use_case-text {
     gap: .5rem;
     display: grid;
-    border: 1px solid #828282;
     padding: 10px;
     width: 100%;
     height: 100%;
@@ -1540,7 +1538,12 @@ main {
   }
 
   .usecase_content-logo {
-    padding: 15px;
+    padding: 20px;
+  }
+
+  .usecase_content-logo  img {
+    width: 25px;
+    height: 25px;
   }
 
   .usecase-title {
@@ -1554,6 +1557,10 @@ main {
 
   .use_case-text {
     border: none;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    gap: 0rem;
   }
 
   .use-case-content {
@@ -1641,6 +1648,9 @@ main {
 
   .usecases_section_container {
     gap: 0;
+  }
+  .usecase_content-logo  {
+    font-size: 20px;
   }
 }
 
@@ -1741,4 +1751,6 @@ main {
     max-width: 90%;
     height: 95%;
   }
+
+
 }
