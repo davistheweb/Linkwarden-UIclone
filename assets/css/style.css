@@ -1491,6 +1491,313 @@ main {
   .usecase_subtitle-container {
     display: none;
   }
+
+  .usecases_section_container {
+    display: grid;
+    gap: 2rem;
+  }
+
+  .explore_usecase {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .usecases_section {
+    position: relative;
+  }
+
+  .use_case_select-button {
+   position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+  }
+
+  .select-use_case {
+    outline: none;
+    border: transparent;
+    border-radius: 10px;
+    background: linear-gradient(to left, #3a00a1, #673ab7);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    
+    color: var(--text--color-white);
+  }
+
+  .use_case-button_f-item {
+    display: flex;
+    justify-self: start;
+    position: relative;
+    width: 110%;
+    max-width: 80%;
+    align-self: center;
+    padding: 1rem 1.2rem;
+   gap: 1rem;
+  }
+
+  .usecase_img_con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 30px;
+  }
+  .usecase_img_con img {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    width: 20px;
+    height:20px;
+  }
+
+  .usecase_name {
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 150%;
+  }
+
+  .usecase_name .use_case_name-title {
+    font-size: .925rem;
+    font-weight: 400;
+    width: max-content;
+  }
+
+  .usecase_arrrow_select {
+    position: absolute;
+    display: flex;
+    right: 0;
+    align-self: center;
+    padding: 1.1rem;
+  }
+
+  .usecase-arrow {
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+
+  .use_case_unlist {
+    position: absolute;
+    justify-self: center;
+    right: 0;
+    left: 0;
+    top: 110%;
+    background-color: rgb(26,26,26, 2);
+    border-radius: 10px;
+    padding: 1.1rem 1.2rem;
+    width: 100%;
+    max-width: 100%;
+    display: none;
+   
+  }
+
+  .use_case_unlist.openlist {
+    display: flex;
+    
+  }
+
+  .usecases_section-lists {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .usecase-list_container {
+    width: 100%;
+    height: 100%;
+    gap: 1rem ;
+  }
+
+  .usecase_section {
+    padding: .5rem;
+    width: 100%;
+    justify-self: center;
+    min-width: 100%;
+    
+  }
+
+  .active_usecase {
+    background-color: rgb(45, 45, 45, 1);
+  }
+
+  .user_case_section-content {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .use_case-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .use_case-icon img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .use-case_list_title {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .use_case-content_container {
+    gap: .5rem;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+    
+  }
+
+  .use-case-content {
+    display: flex;
+   align-items: center;
+    width: 100%;
+  }
+
+   .usecase_content-logo {
+    background: linear-gradient(-45deg, #333, rgb(65, 64, 64,1));
+    display:flex;
+    border: 1px solid #838383;
+    width: max-content;
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    padding:8px;
+  }
+
+  .usecase_content-logo img {
+    width: 20px;
+    min-width: 100%;
+    height: 20px;
+  }
+
+  .use_case-text {
+    gap: .5rem;
+    display: grid;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .usecase-title_container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+  }
+  .usecase-title {
+    font-size: .9rem;
+    font-weight: 400;
+  }
+  .usecase_subtitle-container {
+    width: 100%;
+  }
+
+  .usecase_subtitle {
+    font-size: .7rem;
+  }
+
+  .usecase_subtitle-container {
+    display: none;
+  }
+
+  .user-comment-article {
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .user-comment-box {
+    width: 350px;
+    padding: 0 1.3rem;
+    height: max-content;
+    padding-bottom: .6rem;
+  }
+
+  .user-comment_title {
+    font-size: 1.8rem;
+  }
+
+  .article-content {
+    display: grid;
+    width: 100%;
+  }
+
+  .article-comment-text {
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: 1.4rem;
+  }
+
+  .user-info {
+    display: flex;
+    align-items: center;
+    margin-top: 1.4rem;
+    gap: .7rem;
+  }
+
+  .user-img_box {
+    width: 45px;
+    background-color: #202020;
+    padding: 1.6rem;
+    border-radius:50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+  }
+
+  .user-img_box img {
+    width: 30px;
+    height: 20px;
+  }
+
+  .user_name-titlebox {
+    align-items: center;
+    display: flex;
+  }
+
+  .usersname {
+    color: var(--text--color-white);
+    font-family: var(--web--font);
+    font-size: 13px;
+  }
+
+  .user_rating-socials {
+    display: flex;
+    justify-content: space-between;
+    margin-top: .4rem;
+  }
+
+  .rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .2rem;
+  }
+
+  .user-rate {
+    color: rgb(225, 215, 0 , 1);
+  }
+
+  .user-social_logo {
+    padding: .1rem;
+  }
+
+  .social-logo {
+    color: var(--text--color-white);
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (min-width: 500px) {
