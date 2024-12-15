@@ -513,6 +513,11 @@ main {
   cursor: pointer;
 }
 
+.user-comment_title {
+  color: var(--text--color-white);
+  font-size: 10rem;
+}
+
 @media screen and (max-width: 380px) {
 
   body {
@@ -936,6 +941,10 @@ main {
   .usecase_subtitle {
     font-size: .7rem;
   }
+
+  .usecase_subtitle-container {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 381px) {
@@ -1350,6 +1359,10 @@ main {
   .usecase_subtitle {
     font-size: .7rem;
   }
+
+  .usecase_subtitle-container {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 500px) {
@@ -1407,9 +1420,7 @@ main {
   .usecase_subtitle {
     font-size: .9rem;
   }
-  .usecase_subtitle-container {
-    display: none;
-  }
+  
 
 }
 

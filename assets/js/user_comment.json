@@ -1,0 +1,20 @@
+[
+    {
+        "Usernames" : {
+            "user1" : "Propanpanda",
+            "user2" : "Ian Howells",
+            "user3" : "luciano",
+            "user4" : "Loop()",
+            "user5" : "Mark C", 
+            "user6" : "BLACKVOID"
+        },
+        "UserComments" : {
+            "user_comment1" : "Linkwarden looks like all I ever wanted from a bookmarks app.",
+            "user_comment2" : "Slick lil app to manage bookmarks while archiving the page in case it gets removed/redirected/etc linkwarden app",
+            "user_comment3" : "Linkwarden is the most genius program of  time!",
+            "user_comment4" : "I got linkwarden installed in my nas, seems preety nice, already started to save some links",
+            "user_comment5" : "Gotta say Linkwarden is pretty slick. Got it up and going today, and it's great. I don't have to keep shuffling my huge browser bookmarks files between browsers when I switch every other week.",
+            "user_comment6" : "Just give linkwarden a spin in #Docker on #Synology. A fast, and nice looking platform!"
+        }
+    }
+]
