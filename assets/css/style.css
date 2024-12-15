@@ -547,13 +547,17 @@ main {
   border-radius: 10px;
   padding: 10px;
   background-color: rgb(51, 51, 51, 0.1);
-  background: linear-gradient(45deg, #101010, #202020);
+  background: linear-gradient(-45deg, #101010, #202020);
   cursor: pointer;
   transition: border 0.3s ease;
 }
 
 .user-comment-box:hover {
   border: 1px solid #626161;
+}
+
+.user-comment-article {
+  justify-items: center;
 }
 
 @media screen and (max-width: 380px) {
@@ -1856,6 +1860,9 @@ main {
     font-size: .9rem;
   }
   
+  .user-comment-box {
+    width: 90%;
+  }
 
 }
 
@@ -2033,6 +2040,11 @@ main {
     font-size: .9rem;
   }
 
+  .user-comment-article {
+    grid-template-columns: repeat(2, 1fr);
+    gap: .5rem;
+  }
+
 }
 
 @media screen and (min-width: 740px) {
@@ -2108,6 +2120,14 @@ main {
   }
   .usecase_content-logo  {
     font-size: 20px;
+  }
+
+  .article-content-box {
+    width: 100%;
+  }
+
+  .article-comment-text {
+    font-size: .8rem;
   }
 }
 
@@ -2191,11 +2211,12 @@ main {
   }
 
   .experience_title {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .experience-subtitle {
-    font-size: 0.8rem;
+    font-size: 1rem;
+    font-weight: 300;
   }
 
   .experience_box_container {
@@ -2204,10 +2225,19 @@ main {
     justify-self: center;
   }
   .experience-box {
-    width: 100%;
-    max-width: 90%;
-    height: 95%;
+    width: 300px;
+    max-width: 350px;
+    height: 290px;
   }
 
+  .user-comment_container {
+    max-width: 70%;
+    justify-self: center;
+    padding-bottom: 2rem;
+  }
 
+  .user-comment-article {
+    grid-template-columns: repeat(3, 1fr);
+    gap: .9rem;
+  }
 }
