@@ -36,7 +36,7 @@ const displayContext = () => {
         });
     });
 };
-
+displayContext();
 const removeLoadingAnimation = () => {
   const paragraphText = document.querySelectorAll(
     ".features_paragraph_loading"
@@ -47,6 +47,6 @@ const removeLoadingAnimation = () => {
   });
 };
 window.addEventListener("load", () => {
-  displayContext();
+  
   removeLoadingAnimation();
 });
