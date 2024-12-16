@@ -839,8 +839,9 @@ main {
 .faq-question {
   position: relative;
   display: flex;
-  gap: .8rem;
+  gap: 1rem;
   width: 100%;
+  height: 30px;
 }
 
 .faq_rotate-icon {
@@ -851,7 +852,8 @@ main {
 .faqp,
 .faqx {
   position: absolute;
-
+  font-size: 1.2rem;
+  top: 0;
 }
 
 .faq-text {
@@ -861,11 +863,13 @@ main {
 
 .faq-answer {
   padding: 0 1%;
-  width: 100%;/* 
-  display: none; */
+  width: 100%;
+  display: none;
+  transition: display 5s ease-in;
 }
 
-.faq-answer .popup {
+.faq-answer.popup {
+  transition: display 5s ease-in;
   display: flex;
 }
 

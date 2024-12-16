@@ -1,5 +1,4 @@
 'use strict';
-
 const UseCaseTitles = document.querySelectorAll(".usecase-title"),
     UseCaseSubtitle = document.querySelectorAll(".usecase_subtitle"),
     useCaseSelectLists = document.querySelectorAll(".usecase_section"),
@@ -27,7 +26,6 @@ const openAndCloseUseCaseList = () => {
     });
 };
 openAndCloseUseCaseList();
-
 const displayUseCase = () => {
     fetch("assets/js/usecase.json")
         .then((res) => {
