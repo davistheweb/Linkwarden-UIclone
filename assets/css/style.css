@@ -2501,6 +2501,7 @@ main {
     width: 300px;
   }
   .features_block {
+    min-height: 1%0%;
     display: grid;
     gap: 10rem;
   }
