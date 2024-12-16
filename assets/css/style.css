@@ -795,6 +795,89 @@ main {
 .plan_buttons {
   justify-self: center;
 }
+
+.faqquestion {
+  padding: 0 2%;
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-container {
+  width: 100%;
+}
+
+.fag-box-container {
+  background-color: rgb(51, 51, 51, 0.1);
+  background: linear-gradient(-45deg, #101010, #202020);
+  border: 1px solid #838383;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 20px;
+  box-shadow: #ffffff20 0px 5px 20px 0px;
+  color: var(--text--color-white);
+  font-family: var(--web--font);
+}
+
+
+.faq-inner_box {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+}
+
+.faq-body {
+  border-bottom: 1px solid #beb5cb;
+  gap: .5rem;
+  padding: .95rem .5rem;
+  width: 100%;
+  display: grid;
+}
+
+.faq-question {
+  position: relative;
+  display: flex;
+  gap: .8rem;
+  width: 100%;
+}
+
+.faq_rotate-icon {
+  position: relative;
+  display: flex;
+}
+
+.faqp,
+.faqx {
+  position: absolute;
+
+}
+
+.faq-text {
+  font-size: .9rem;
+  font-weight: 300;
+}
+
+.faq-answer {
+  padding: 0 1%;
+  width: 100%;/* 
+  display: none; */
+}
+
+.faq-answer .popup {
+  display: flex;
+}
+
+.faq-answer_text {
+  font-size: 13px;
+}
+
+.frequentlyasked-text {
+  color: var(--text--color-white);
+  text-align: center;
+  font-family: var(--web--font);
+}
 @media screen and (max-width: 380px) {
 
   body {
