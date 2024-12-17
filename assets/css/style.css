@@ -834,6 +834,7 @@ main {
   padding: .95rem .5rem;
   width: 100%;
   display: grid;
+  height: 100%;
 }
 
 .faq-question {
@@ -853,6 +854,8 @@ main {
 .faq_rotate-icon {
   position: relative;
   display: flex;
+  width: 5px;
+  height: 5px;
 }
 
 .faqp,
