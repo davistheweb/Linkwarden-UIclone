@@ -865,7 +865,23 @@ main {
   top: 0;
 }
 
+ .faqp.rotate-close-open{
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+  transform: rotate(30deg);
+}
 
+.faqx {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.faqx.rotate-close-open {
+  opacity: 1;
+  visibility: visible;
+  transform: rotate(-45deg);
+}
 
 .faqp.change {
   display: none;
@@ -900,6 +916,26 @@ main {
   color: var(--text--color-white);
   text-align: center;
   font-family: var(--web--font);
+}
+
+.faq-end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  color: var(--text--color-white);
+  font-family: var(--web--font);
+}
+
+.faq_end-text {
+  font-weight: 300;
+  text-align: center;
+}
+
+.faq_end-text a {
+  color: var(--text--color-white);
+  text-decoration: underline;
 }
 @media screen and (max-width: 380px) {
 
@@ -2429,6 +2465,10 @@ main {
 
   .faq-container {
     max-width: 70%;
+  }
+
+  .frequentlyasked-text {
+    font-size: 1.9rem;
   }
  
 }
