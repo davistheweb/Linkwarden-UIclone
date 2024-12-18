@@ -24,7 +24,7 @@ const PlanEvent = () => {
         planBtn.addEventListener('click', () => {
             planButton.forEach(btn => btn.classList.remove('active-plan'));
            planBtn.classList.add('active-plan');
-          let indexClicked = index === 1 ? planPrice.textContent = "$3" : planPrice.textContent = "$4";
+          let indexClicked = index === 1 ? planPrice.textContent = "$4" : planPrice.textContent = "$3";
         });
     })
 };

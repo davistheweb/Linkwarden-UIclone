@@ -30,6 +30,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  scroll-behavior: smooth;
 }
 
 .grid {
@@ -798,7 +799,7 @@ main {
 
 .faqquestion {
   padding: 0 2%;
-  margin-top: 2rem;
+  margin-top: 1rem;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -807,6 +808,7 @@ main {
 
 .faq-container {
   width: 100%;
+  margin-top: 5rem;
 }
 
 .fag-box-container {
@@ -936,6 +938,61 @@ main {
 .faq_end-text a {
   color: var(--text--color-white);
   text-decoration: underline;
+}
+
+.linkwarden-footer {
+  margin-top: 2rem;
+}
+
+.footer-container {
+  margin-top: 1rem;
+}
+
+.futo-context {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ gap: 1rem;
+ margin-bottom: 1rem;
+} 
+
+.futo-context :where(.footer-title, .footer-subtitle, .footer_get-started_button,.footer-lauch-demo ) {
+  color: var(--text--color-white);
+  font-family: var(--web--font);
+}
+
+.footer-buttons {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem; 
+}
+.footer_get-started_button {
+  background-color: #4b03cd;
+  color: var(--text--color-white);
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  border-radius: 50px;
+  font-size: 0.875rem;
+  display: flex;
+  text-align: center;
+  font-weight: 500;
+  border: 1px solid #4b03cd;
+}
+
+.footer-lauch-demo {
+background-color: transparent;
+backdrop-filter: blur(10px);
+border: 1px solid #828282;
+padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+border-radius: 50px;
+font-size: 0.875rem;
+display: flex;
+text-align: center;
+color: var(--text--color-white);
+gap: 0.3rem;
 }
 @media screen and (max-width: 380px) {
 
@@ -1456,6 +1513,15 @@ main {
 
   .explore_usecase {
     font-size: 1.5rem;
+  }
+
+  .footer-title {
+    font-size: 1.3rem;
+  }
+
+  .footer-subtitle {
+    font-size: 1rem;
+    font-weight: 300;
   }
 }
 
