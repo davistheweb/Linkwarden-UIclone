@@ -266,17 +266,33 @@ main {
 .home {
   margin-top: 2rem;
   font-family: var(--web--font);
-  background-image: url(../img/SVG\ by\ MagicPattern.design.svg);
-  /* box-shadow: 0 0 15px 5px rgba(186, 187, 187, 0.4);  */
+  background-size:cover;
+  /* background-repeat: no-repeat;
+  /* box-shadow: 0 0 15px 5px rgba(186, 187, 187, 0.4);  
   filter: drop-shadow(0 0 105px rgba(18, 0, 48, 0.8));
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(40, 157, 242, 0.4) 0%, rgba(111, 48, 216, 0) 100%) !important;
+ */
+  
   width: 100%;
 }
 
 .home-container {
+ position: relative;
   width: 100%;
   margin-top: 5rem;
+}
+
+.home-background {
+  position: absolute;
+  top: -10%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  z-index: -1;
+}
+
+.home-background svg {
+  width: 150%;
 }
 .home-content {
   padding: 1% 0;
@@ -402,6 +418,8 @@ main {
   filter: drop-shadow(0 0 105px rgba(88, 11, 211, 0.8));
   background-image: url(../img/SVG\ by\ MagicPattern.design.svg);
   background-repeat: no-repeat;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(111, 48, 216, 0.14) 0%, rgba(38, 24, 80, 0) 100%);
+
   z-index: -1;
   width: 60%;
   top: 0;
@@ -656,10 +674,16 @@ main {
 }
 
 .cloud-box {
-  border: 1px solid rgb(100, 77, 166, 1);
+  /* ;
   box-shadow: #ffffff20 0px 5px 20px 0px;
   background: linear-gradient(-45deg, #333, rgb(65, 64, 64,1));
-}
+  */
+  border: 1px solid rgb(100, 77, 166, 1);
+  background: linear-gradient(121.75deg, rgba(236, 200, 200, 0.2) 0.95%, rgba(0, 0, 0, 0.12) 37.87%, rgba(255, 255, 255, 0.02) 84.35%);
+  border: 1px solid;
+backdrop-filter: blur(70px);
+box-shadow: 10px 0px 30px 0px rgba(45, 45, 45, 0.25);
+} 
 
 .plan-box_inner {
   display: flex;
@@ -813,13 +837,26 @@ main {
 }
 
 .fag-box-container {
-  background-color: rgb(51, 51, 51, 0.1);
-  background: linear-gradient(-45deg, #101010, #202020);
+  background: linear-gradient(121.75deg, rgba(236, 200, 200, 0.2) 0.95%, rgba(0, 0, 0, 0.12) 37.87%, rgba(255, 255, 255, 0.02) 84.35%);
+
+  border: 1px solid;
+
+border-image-source: linear-gradient(166.62deg, #A09494 1.89%, rgba(95, 86, 86, 0.22) 94.76%);
+
+
+  backdrop-filter: blur(70px);
+
+box-shadow: 10px 0px 30px 0px rgba(45, 45, 45, 0.25);
+
+box-shadow: -10px -10px 30px 0px rgba(45, 45, 45, 0.25);
+
+  /* background-color: rgb(51, 51, 51, 0.1);
+  background: linear-gradient(-45deg, #101010, #202020); */
   border: 1px solid #838383;
   padding: 1rem;
   margin-top: 2rem;
   border-radius: 20px;
-  box-shadow: #ffffff20 0px 5px 20px 0px;
+  /* box-shadow: #ffffff20 0px 5px 20px 0px; */
   color: var(--text--color-white);
   font-family: var(--web--font);
 }
@@ -831,7 +868,19 @@ main {
 }
 
 .border_solid{
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  /* border-bottom: rgba(217, 217, 217, 0) 0%, #D9D9D9 49%, rgba(217, 217, 217, 0); */
+  position: relative;
+}
+
+.border_solid::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(270deg, rgba(217, 217, 217, 0) 0%, #D9D9D9 49%, rgba(217, 217, 217, 0) 100%);
+
 }
 
 .faq-body {
@@ -964,6 +1013,10 @@ main {
   align-items: center;
  gap: 1rem;
  margin-bottom: 1rem;
+ background: radial-gradient(50% 50% at 50% 50%, rgba(111, 48, 216, 0.154) 0%, rgba(38, 24, 80, 0) 100%);
+ background-position: center;
+ background-size: 75%;
+ background-repeat: no-repeat;
 } 
 
 .footer-context :where(.footer-title, .footer-subtitle, .footer_get-started_button,.footer-lauch-demo ) {
@@ -1011,17 +1064,18 @@ gap: 0.3rem;
   margin-top: 2rem;
 }
 .footer_button-context  {
+  max-width: 70%;
   padding: 1rem;
-  gap: 2rem;
+  gap: 5rem;
 }
 
 
 .linkwarden-footer-info {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   color: var(--text--color-white); 
   gap:1rem;
   width: 100%;
-  position: relative;
  }
 
  .linkwarden-logo {
@@ -1033,6 +1087,8 @@ gap: 0.3rem;
 }
 
 .footer_link-continer {
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
 }
 
@@ -1050,6 +1106,8 @@ gap: 0.3rem;
 }
 
 .footer-socials_contact-buttoons_container {
+  display: flex;
+  flex-direction: column;
   max-width: 50%;
   gap: 1rem;
 }
@@ -1620,7 +1678,7 @@ gap: 0.3rem;
   }
 
   .footer_link-continer h5 {
-    font-size: 1rem;
+    font-size: .8rem;
     font-weight: 400;
   }
 }
@@ -2542,7 +2600,8 @@ gap: 0.3rem;
   }
 
   .active_usecase {
-    background: linear-gradient(to bottom right, #beb5cb,var(--main-color));
+    background: linear-gradient(225deg, #673AB7 0%, #3A00A2 100%);
+
   }
 
   .usecase-list_container {
@@ -2648,6 +2707,7 @@ gap: 0.3rem;
 
   .footer_button {
     display: flex;
+    justify-content: center;
     
     max-width: 100%;
   }
@@ -2655,6 +2715,15 @@ gap: 0.3rem;
   .footer_button-context {
     grid-template-columns: repeat(3, 2fr);
     justify-self: center;
+  }
+  .linkwarden-logo {
+    height: 45px;
+  }
+
+  .linkwarden-footer-info {
+    gap: 1rem;
+    max-width: 100% ;
+    width: 100%;
   }
 }
 
@@ -2689,7 +2758,7 @@ gap: 0.3rem;
 @media screen and (min-width: 920px) {
   .home {
     margin-top: 8rem;
-    background-size: 200;
+    background-size: 10;
     background-position: unset;
   }
 
@@ -2758,6 +2827,10 @@ gap: 0.3rem;
 
   .user-comment_title {
     font-size: 2.3rem;
+  }
+
+  .linkwarden-info_subtitle {
+    font-size: .9rem;
   }
 }
 
