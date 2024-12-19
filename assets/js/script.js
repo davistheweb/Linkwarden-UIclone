@@ -7,6 +7,9 @@ const toogleMenu = (menuButton, menu) => {
         menuElement.classList.toggle('open');
         document.body.classList.toggle('ham');
     });
+
+    const Navlinks = document.querySelectorAll('.navlist').forEach(links => links.addEventListener('click', () => {menuElement.classList.toggle('open');
+        document.body.classList.toggle('ham');}));
     document.addEventListener('click', (e) => {
         if(!menuElement.contains(e.target) && !menuButtonEle.contains(e.target)){
             menuElement.classList.remove('open');
