@@ -1169,6 +1169,10 @@ gap: 0.3rem;
     background-size: 100%;
   }
 
+  .home-background {
+    top: -45%;
+  }
+
   .home-title {
     font-size: 1.3rem;
   }
@@ -1717,6 +1721,10 @@ gap: 0.3rem;
     margin-top: 3.5rem;
     background-size: 130%;
     background-position: center;
+  }
+
+  .home-background {
+    top: -35%;
   }
 
   .home-title {
@@ -2458,6 +2466,10 @@ gap: 0.3rem;
     background-size: 100%;
   }
 
+  .home-background {
+    top: -30%;
+  }
+
   .home-title {
     font-size: 1.7rem;
   }
@@ -2523,6 +2535,10 @@ gap: 0.3rem;
 }
 
 @media screen and (min-width: 640px) {
+
+  .home-background {
+    top: -20%;
+  }
   .home-title {
     font-size: 2.6rem;
   }
@@ -2785,6 +2801,10 @@ gap: 0.3rem;
     margin-top: 8rem;
     background-size: 10;
     background-position: unset;
+  }
+
+  .home-background {
+    top: -10%;
   }
 
   .home-title {
