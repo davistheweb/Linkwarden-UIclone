@@ -857,9 +857,11 @@ box-shadow: -10px -10px 30px 0px rgba(45, 45, 45, 0.25);
   border-radius: 20px;
   /* box-shadow: #ffffff20 0px 5px 20px 0px; */
   color: var(--text--color-white);
-  font-family: var(--web--font);
 }
 
+.fag-box-container :where(.faq-text, .faq-answer_text) {
+  font-family: var(--web--font);
+}
 
 .faq-inner_box {
   width: 100%;
@@ -913,15 +915,15 @@ box-shadow: -10px -10px 30px 0px rgba(45, 45, 45, 0.25);
 .faqp,
 .faqx {
   position: absolute;
-  font-size: 1.2rem;
-  top: 0;
+  font-size: 1rem;
+  top: -4%;
 }
 
- .faqp.rotate-close-open{
+.faqp.rotate-close-open {
+  transform: rotate(40deg);
   visibility: hidden;
   opacity: 0;
   display: none;
-  transform: rotate(30deg);
 }
 
 .faqx {
@@ -929,10 +931,9 @@ box-shadow: -10px -10px 30px 0px rgba(45, 45, 45, 0.25);
   visibility: hidden;
 }
 
-.faqx.rotate-close-open {
+.faqx.rotate-close--open {
   opacity: 1;
   visibility: visible;
-  transform: rotate(-45deg);
 }
 
 .faqp.change {
@@ -962,6 +963,7 @@ box-shadow: -10px -10px 30px 0px rgba(45, 45, 45, 0.25);
 
 .faq-answer_text {
   font-size: 13px;
+  text-align: start;
 }
 
 .frequentlyasked-text {
